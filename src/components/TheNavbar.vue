@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container d-flex justify-content-between d-flex align-items-center pt-5 pb-4">
+        <div class="container d-flex justify-content-between d-flex align-items-center pt-3 pb-4">
             <div>
                 <img src="img/dc-logo.png" alt="">
             </div>

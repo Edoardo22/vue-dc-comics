@@ -6,30 +6,30 @@
                     <div class="pe-4">
                         <h3 class="text-white pb-2">DC COMICS</h3>
                         <ul class="list-unstyled" v-for="(link, i) in dcComicsList" :key="i">
-                            <li class="text-light"><a :href="link.url" class="nav-link">{{ link.name }}</a></li>
+                            <li class="text-secondary"><a :href="link.url" class="nav-link">{{ link.name }}</a></li>
                         </ul>
                     </div>
                     <div class="">
                         <h3 class="text-white pb-2">SHOP</h3>
                         <ul class="list-unstyled" v-for="(link, i) in shoplist" :key="i">
-                            <li class="text-light"><a :href="link.url" class="nav-link">{{ link.name }}</a></li>
+                            <li class="text-secondary"><a :href="link.url" class="nav-link">{{ link.name }}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="px-4">
                     <h3 class="text-white pb-2">DC</h3>
                     <ul class="list-unstyled" v-for="(link, i) in dcList" :key="i">
-                        <li class="text-light"><a :href="link.url" class="nav-link">{{ link.name }}</a></li>
+                        <li class="text-secondary"><a :href="link.url" class="nav-link">{{ link.name }}</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-white pb-2">SITES</h3>
                     <ul class="list-unstyled" v-for="(link, i) in sitesList" :key="i">
-                        <li class="text-light"><a class="nav-link" :href="link.url">{{ link.name }}</a></li>
+                        <li class="text-secondary"><a class="nav-link" :href="link.url">{{ link.name }}</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="">
+            <div class="big-logo">
                 <img src="img/dc-logo-bg.png" alt="">
             </div>
         </footer>
@@ -162,5 +162,20 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.big-logo {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    z-index: -1;
+
+
+}
+
+.big-logo img {
+    width: 650px;
+    height: 650px;
 }
 </style>

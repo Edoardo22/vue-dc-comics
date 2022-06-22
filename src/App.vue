@@ -2,27 +2,30 @@
   <div id="app">
 
     <TheNavbar></TheNavbar>
-    <TheHeader></TheHeader>
+    <TheMain></TheMain>
     <TheBannerblue></TheBannerblue>
     <TheFooter></TheFooter>
+    <BannerFooter></BannerFooter>
 
 
   </div>
 </template>
 
 <script>
-import TheHeader from './components/TheHeader.vue'
+import TheMain from './components/TheMain.vue'
 import TheFooter from './components/TheFooter.vue'
 import TheNavbar from './components/TheNavbar.vue'
 import TheBannerblue from './components/TheBannerblue.vue'
+import BannerFooter from './components/bannerFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    TheHeader,
+    TheMain,
     TheFooter,
     TheNavbar,
-    TheBannerblue
+    TheBannerblue,
+    BannerFooter
   }
 }
 </script>
